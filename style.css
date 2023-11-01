@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(112, 190, 213);
+  background: linear-gradient(
+    99deg,
+    rgba(112, 190, 213, 1) 47%,
+    rgba(126, 123, 238, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.input-box {
+  position: relative;
+}
+
+.password {
+  width: 300px;
+  height: 100px;
+  font-size: 25px;
+  padding-right: 100px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
+.fa-eye-slash,
+.fa-eye {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  font-size: 30px;
+  cursor: pointer;
+  border-left: 1px solid #e5e5e5;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+@media (500px <= width) {
+  .password {
+    width: 450px;
+  }
+}
+
+@media (768px <= width) {
+  .password {
+    padding-right: 150px;
+
+    width: 600px;
+    font-size: 35px;
+  }
+}
